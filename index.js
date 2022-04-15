@@ -19,6 +19,15 @@ async function test(req,res){
     const user = await userModel.find()
 
     res.send(user)
+
+    /*const user = new userModel(request.body);
+
+    try {
+        await user.save();
+        response.send(user);
+    } catch (error) {
+        response.status(500).send(error);
+    }*/
 }
 
 
